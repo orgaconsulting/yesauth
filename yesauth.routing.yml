@@ -1,0 +1,48 @@
+yesauth.start:
+  path: '/yesauth/start'
+  defaults:
+    _controller: '\Drupal\yesauth\Controller\YesController::start'
+    _title: 'Go for YES'
+  requirements:
+    _permission: 'use yesauth flow'
+  options:
+    no_cache: 'TRUE'
+
+yesauth.auth:
+  path: '/yesauth/auth'
+  defaults:
+    _controller: '\Drupal\yesauth\Controller\YesController::auth'
+    _title: 'IDP redirect'
+  requirements:
+    _permission: 'use yesauth flow'
+  options:
+    no_cache: 'TRUE'
+    query:
+      issuer_url: ""
+      state: ""
+      error: ""
+
+yesauth.login:
+  path: '/yesauth/login'
+  defaults:
+    _controller: '\Drupal\yesauth\Controller\YesController::login'
+    _title: 'IDP redirect'
+  requirements:
+    _permission: 'use yesauth flow'
+  options:
+    no_cache: 'TRUE'
+    query:
+      code: ""
+      state: ""
+      iss: ""
+
+yesauth.yes_auth_config_form:
+  path: '/admin/config/yesauth/yesauthconfig'
+  defaults:
+    _form: '\Drupal\yesauth\Form\YesAuthConfigForm'
+    _title: 'yesauth Configuration'
+  requirements:
+    _permission: 'administer yesauth config'
+  options:
+    _admin_route: TRUE
+    _maintenance_access: TRUE

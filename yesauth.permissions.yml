@@ -1,0 +1,10 @@
+
+administer yesauth config:
+  title: 'Administer yesauth configuration'
+  description: 'Allow to access the administration form to configure yesauth.'
+  restrict access: true
+
+use yesauth flow:
+  title: 'Use yesauth flow'
+  description: 'Allow to use yesauth flow for yes.com authentication.'
+

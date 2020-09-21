@@ -1,0 +1,17 @@
+{
+    "name": "yesauth",
+    "type": "drupal-module",
+    "description": "Module to authenticate by yes.com IDP service",
+    "keywords": [
+    ],
+    "homepage": "https://github.com/orgaconsulting/yesauth",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/orgaconsulting/yesauth/issues",
+        "source": "https://github.com/orgaconsulting/yesauth"
+    },
+    "require": {
+        "ext-json": "*",
+        "firebase/php-jwt": "^5.2"
+    }
+}

@@ -1,0 +1,6 @@
+yesauth.yes_auth_config_form:
+  title: 'Yes.com Configuration'
+  route_name: yesauth.yes_auth_config_form
+  description: 'Configuration for your yes.com authentication flow'
+  parent: system.admin_config_system
+  weight: 99

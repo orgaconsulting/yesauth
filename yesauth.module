@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains yesauth.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function yesauth_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the yesauth module.
+    case 'help.page.yesauth':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to authenticate by yes.com IDP service') . '</p>';
+      return $output;
+
+    default:
+  }
+}

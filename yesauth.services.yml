@@ -1,0 +1,9 @@
+services:
+  logger.channel.yesauth:
+    parent: logger.channel_base
+    arguments: ['yesauth']
+
+  yesauth.route_subscriber:
+    class: Drupal\yesauth\Routing\YesLoginRouteSubscriber
+    tags:
+      - { name: event_subscriber }

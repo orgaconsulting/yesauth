@@ -1,0 +1,6 @@
+name: 'yesauth'
+type: module
+description: 'Module to authenticate by yes.com IDP service'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'yes'
