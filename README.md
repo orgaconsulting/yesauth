@@ -1,5 +1,5 @@
 # yesauth
-Use yes.com auth with php 7 and Drupal 8.
+Use yes.com auth with php 7 and Drupal 8 (based on Symfony).
 
 
 Author: Rainer Feike (https://github.com/feikede/) on behalf of Orga Consulting GmbH
